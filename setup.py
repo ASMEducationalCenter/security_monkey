@@ -23,7 +23,7 @@ _version_re = re.compile(r'__version__\s+=\s+(.*)')
 with open('security_monkey/__init__.py', 'rb') as f:
     SECURITY_MONKEY_VERSION = str(ast.literal_eval(_version_re.search(
         f.read().decode('utf-8')).group(1)))
-
+## This is for this
 setup(
     name='security_monkey',
     version=SECURITY_MONKEY_VERSION,
